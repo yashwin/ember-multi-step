@@ -1,6 +1,8 @@
 # ember-multi-step
 
-This README outlines the details of collaborating on this Ember addon.
+This addon provides a multi step container similar to the ones used by multistep forms. This exposes a simple component structure that allows for breaking up something into steps or smaller parts.
+
+It aims to work well with things like forms, applications, and provides a simple css structure that can be easily customized.
 
 ## Installation
 
