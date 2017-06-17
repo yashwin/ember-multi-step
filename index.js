@@ -2,5 +2,8 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-multi-step'
+  name: 'ember-multi-step',
+  isDevelopingAddon() {
+    return  true;
+  }
 };

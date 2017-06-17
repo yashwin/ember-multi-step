@@ -1,1 +1,9 @@
-{{yield}}
+{{!-- container dynamic class optional background image --}}
+<div class='mse'>
+  {{#progress-nav step=step changeStep='changeStep'}}{{/progress-nav}}
+  {{!-- yield everything --}}
+  <div class="ems-sctn">
+    {{yield}}
+  </div>
+  {{#step-nav step=step changeStep='changeStep'}}{{/step-nav}}
+</div>

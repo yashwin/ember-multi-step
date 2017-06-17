@@ -4,6 +4,14 @@ This addon provides a multi step container similar to the ones used by multistep
 
 It aims to work well with things like forms, applications, and provides a simple css structure that can be easily customized.
 
+## Options
+
+any amount of steps
+
+custom action on next/previous step
+
+fully customizable steps from parent component yield
+
 ## Installation
 
 * `git clone <repository-url>` this repository
