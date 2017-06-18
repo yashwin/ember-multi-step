@@ -11,10 +11,10 @@ export default Component.extend({
   layout,
   actions: {
     nextStep() {
-      this.sendAction('changeStep', get(this, 'step') + 1);
+      get(this, 'changeStep')(get(this, 'step') + 1); // DDAU
     },
     previousStep() {
-      this.sendAction('changeStep', get(this, 'step') - 1);
+      get(this, 'changeStep')(get(this, 'step') - 1); // DDAU
     }
   }
 });

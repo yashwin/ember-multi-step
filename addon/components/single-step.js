@@ -5,14 +5,13 @@ const {
   Component,
   get,
   getWithDefault,
-  set,
-  computed,
-  $
+  computed
 } = Ember;
 
 export default Component.extend({
   classNames: ['ems-step'],
   classNameBindings: ['stepClass'],
+  attributeBindings: ['num:data-step-num'],
   layout,
   stepClass: computed('num', function() {
     return `ems-${getWithDefault(this, 'num', 'hidden')}`;

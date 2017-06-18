@@ -5,7 +5,6 @@ const {
   Component,
   get,
   set,
-  observer,
   $
 } = Ember;
 
@@ -27,7 +26,7 @@ export default Component.extend({
      */
     changeStep(step) {
       // change the step if its greater than 0 and smaller than the last step
-      if ( step > 0 && step < $('.ems-step').length + 1 ) {
+      if (step > 0 && step < $('.ems-step').length + 1) {
         set(this, 'step', step);
       }
     }
