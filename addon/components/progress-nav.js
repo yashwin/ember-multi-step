@@ -10,10 +10,10 @@ const {
 export default Component.extend({
   classNames: ['ems-progress'],
   layout,
-  steps: computed('stepTotal', function() {
+  steps: computed('stepTotal', 'step', function() {
     let out = [];
     for (let i = 1; i < get(this, 'stepTotal') + 1; i++) {
-      out.push(i);
+      out.push({v: i, s: get(this, 'step') == i});
     }
     return out;
   }),

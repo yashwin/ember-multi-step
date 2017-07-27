@@ -19,14 +19,19 @@
     }
   }
 
-  .ems-progress li {
-    list-style-type: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 12px;
-    width: 33.33%;
-    float: left;
-    position: relative;
+  .ems-progress {
+    li {
+      list-style-type: none;
+      color: white;
+      text-transform: uppercase;
+      font-size: 12px;
+      width: 33.33%;
+      float: left;
+      position: relative;
+      &.sel {
+        color:green;
+      }
+    }
   }
 
   .ems-progress li:after {
