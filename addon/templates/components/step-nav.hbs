@@ -1,7 +1,7 @@
 {{#if notBegining}} 
-	<div {{action "previousStep" num on="click"}}>Step Left</div>
+	<div {{action "previousStep" num on="click"}} class="fa fa-arrow-left"></div>
 {{/if}}
 {{yield}}
 {{#if notEnd}}
-	<div {{action "nextStep" num on="click"}}>Step Right</div>
+	<div {{action "nextStep" num on="click"}} class="fa fa-arrow-right"></div>
 {{/if}}

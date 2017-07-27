@@ -6,6 +6,19 @@
     text-align: center;
   }
 
+  .mse {
+    ul {
+      padding: 0;
+    }
+    .ems-nav {
+      div {
+        width: 49%;
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+  }
+
   .ems-progress li {
     list-style-type: none;
     color: white;
