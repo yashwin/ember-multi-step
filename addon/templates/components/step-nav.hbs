@@ -1,5 +1,7 @@
-{{!-- if step left --}}
-<div {{action "previousStep" num on="click"}}>Step Left</div>
+{{#if notBegining}} 
+	<div {{action "previousStep" num on="click"}}>Step Left</div>
+{{/if}}
 {{yield}}
-<div {{action "nextStep" num on="click"}}>Step Right</div>
-{{!-- if step right --}}
+{{#if notEnd}}
+	<div {{action "nextStep" num on="click"}}>Step Right</div>
+{{/if}}
