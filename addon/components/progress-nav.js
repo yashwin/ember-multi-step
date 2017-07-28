@@ -13,7 +13,7 @@ export default Component.extend({
   steps: computed('stepTotal', 'step', function() {
     let out = [];
     for (let i = 1; i < get(this, 'stepTotal') + 1; i++) {
-      out.push({v: i, s: get(this, 'step') == i});
+      out.push({ v: i, s: get(this, 'step') == i });
     }
     return out;
   }),
