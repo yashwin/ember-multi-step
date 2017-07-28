@@ -18,6 +18,10 @@ export default Component.extend({
       set(this, 'step', 1);
     }
   },
+  didRender() {
+    this._super(...arguments);
+    $('.ems-progress li').css('width', `${100 / get(this, 'stepTotal')  }%`);
+  },
   actions: {
     /**
      * changes the current step to the specified step
