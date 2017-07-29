@@ -3,5 +3,7 @@
 {{/if}}
 {{yield}}
 {{#if notEnd}}
-	<div {{action "nextStep" num on="click"}} class="fa fa-arrow-right"></div>
+	{{#if moveNext}}
+		<div {{action "nextStep" num on="click"}} class="fa fa-arrow-right"></div>
+	{{/if}}
 {{/if}}

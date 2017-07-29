@@ -4,5 +4,5 @@
   <div class="ems-sctn">
     {{yield}}
   </div>
-  {{#step-nav step=step changeStep=(action 'changeStep')}}{{/step-nav}}
+  {{#step-nav step=step canAdvance=canAdvance changeStep=(action 'changeStep')}}{{/step-nav}}
 </div>
