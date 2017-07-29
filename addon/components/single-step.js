@@ -16,6 +16,8 @@ export default Component.extend({
   stepClass: computed('num', function() {
     return `ems-${getWithDefault(this, 'num', 'hidden')}`;
   }),
+  // checks if on correct step, if so show form
+  // also performs validation so the arrow in the step-nav component knows when to hide
   showStep: computed('num', 'step', function() {
     if (getWithDefault(this, 'step', 1) === get(this, 'num')) {
       if (get(this, 'stepKey') && get(this, 'canAdvance')) {

@@ -12,10 +12,13 @@ const { empty } = computed;
 export default Component.extend({
   classNames: ['ems-nav'],
   layout,
+  // is true if all validations are passing
   moveNext: empty('canAdvance.errors'),
+  // is true if not on the first page
   notBegining: computed('step', function() {
     return get(this, 'step') != 1;
   }),
+  // is true if not on the last page
   notEnd: computed('step', function() {
     return get(this, 'step') != $('.ems-step').length;
   }),
