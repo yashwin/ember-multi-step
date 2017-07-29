@@ -5,5 +5,7 @@
 {{#if notEnd}}
 	{{#if moveNext}}
 		<div {{action "nextStep" num on="click"}} class="fa fa-arrow-right"></div>
+	{{else}}
+		<div class="fa fa-ban"></div>
 	{{/if}}
 {{/if}}
