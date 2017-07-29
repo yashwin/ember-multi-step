@@ -18,7 +18,7 @@ export default Component.extend({
   }),
   showStep: computed('num', 'step', function() {
     if (getWithDefault(this, 'step', 1) === get(this, 'num')) {
-      if (get(this, 'stepKey')) {
+      if (get(this, 'stepKey') && get(this, 'canAdvance')) {
         get(this, 'canAdvance').validate(get(this, 'stepKey'));
       }
       return true;
