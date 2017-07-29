@@ -13,7 +13,7 @@ export default Component.extend({
   classNames: ['ems-nav'],
   layout,
   // is true if all validations are passing
-  moveNext: empty('canAdvance.errors'),
+  moveNext: empty('form.errors'),
   // is true if not on the first page
   notBegining: computed('step', function() {
     return get(this, 'step') != 1;
