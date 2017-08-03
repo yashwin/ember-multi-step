@@ -23,8 +23,8 @@ export default Component.extend({
       if (get(this, 'stepKey') && get(this, 'form')) {
         get(this, 'form').validate(get(this, 'stepKey'));
       }
-      return true;
+      return "";
     }
-    return false;
+    return "hidden";
   })
 });
