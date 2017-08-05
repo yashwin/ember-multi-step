@@ -24,11 +24,27 @@
       list-style-type: none;
       color: white;
       text-transform: uppercase;
-      font-size: 40px;
+      font-size: 50px;
       float: left;
       position: relative;
       &.sel {
         color: #EF3E36;
+      }
+    }
+  }
+
+  @media(max-width: 1050px){
+    .ems-progress {
+      li {
+        font-size: 40px;
+      }
+    }
+  }
+
+  @media(max-width: 660px){
+    .ems-progress {
+      li {
+        font-size: 24px;
       }
     }
   }
