@@ -1,0 +1,8 @@
+ul
+  = each steps as |step|
+    if step.s
+      li.sel
+        = step.v
+    else
+      li
+        = step.v

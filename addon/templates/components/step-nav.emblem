@@ -1,0 +1,7 @@
+if showPrev
+  button click='previousStep'
+    | Previous
+= yield
+if showNext
+  button click='nextStep'
+    | Next
