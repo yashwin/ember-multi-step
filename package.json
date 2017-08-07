@@ -1,6 +1,6 @@
 {
   "name": "ember-multi-step",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Ember-cli addon that provides a multi-step form style container",
   "keywords": [
     "ember-addon"
