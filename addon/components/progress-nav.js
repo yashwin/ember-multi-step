@@ -12,14 +12,22 @@ export default Component.extend({
   layout,
   steps: computed('stepTotal', 'step', function() {
     let out = [];
-    for (let i = 1; i < get(this, 'stepTotal') + 1; i++) {
-      out.push({ v: i, s: get(this, 'step') == i });
+    let step = get(this, 'step');
+    let stepTotal = get(this, 'stepTotal');
+    let prev = step - 1;
+    let next = step + 1;
+    if (prev > 0) {
+      out.push({ v: prev });
+    }
+    out.push({ v: get(this, 'step'), s: true });
+    if (next - 1 < stepTotal) {
+      out.push({ v: next });
     }
     return out;
   }),
   actions: {
-    changeStep() {
-      get(this, 'changeStep')(get(this, 'step')); // DDAU
+    changeStep(step) {
+      get(this, 'changeStep')(step); // DDAU
     }
   }
 });
