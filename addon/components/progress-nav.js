@@ -14,14 +14,13 @@ export default Component.extend({
     let out = [];
     let step = get(this, 'step');
     let stepTotal = get(this, 'stepTotal');
-    let prev = step - 1;
-    let next = step + 1;
-    if (prev > 0) {
-      out.push({ v: prev });
-    }
-    out.push({ v: get(this, 'step'), s: true });
-    if (next - 1 < stepTotal) {
-      out.push({ v: next });
+    for (var i = 1; i < stepTotal + 1; i++) {
+      if ( i === step) {
+        out[i - 1] = { v: i, s: true };
+      }
+      else {
+        out[i - 1] = { v: i }
+      }
     }
     return out;
   }),
