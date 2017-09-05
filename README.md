@@ -6,11 +6,29 @@ It aims to work well with things like forms, applications, and provides a simple
 
 ## Options
 
-any amount of steps
+stepTotal - number of total steps desired
 
-custom action on next/previous step
+changeStep - optional custom changeStep actions
 
-fully customizable steps from parent component yield
+step - property defined on component/controller that allows observing the step property
+
+## Example Usage
+
+```
+{{#multi-step step=step stepTotal=4 changeStep=(action 'changeStep')}}
+  {{#single-step step=step num=1}}
+    content 1
+  {{/single-step}}
+  {{#single-step step=step num=2}}
+    content 2
+  {{/single-step}}
+  {{#single-step step=step num=3}}
+    content 3
+  {{/single-step}}
+  {{#single-step step=step num=4}}
+    content 4
+  {{/single-step}}
+{{/multi-step}}
 
 ## Installation
 
@@ -35,3 +53,5 @@ fully customizable steps from parent component yield
 * `ember build`
 
 For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+
+```
