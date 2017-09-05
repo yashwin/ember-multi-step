@@ -29,7 +29,7 @@ step - property defined on component/controller that allows observing the step p
     content 4
   {{/single-step}}
 {{/multi-step}}
-
+```
 ## Installation
 
 * `git clone <repository-url>` this repository
@@ -53,5 +53,3 @@ step - property defined on component/controller that allows observing the step p
 * `ember build`
 
 For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
-
-```
