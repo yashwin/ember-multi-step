@@ -18,6 +18,7 @@ export default Component.extend({
   }),
   /**
    * checks if on correct step, if so show form
+   * @public
    * @return {boolean}   to show or not to show
    */
   showStep: computed('num', 'step', function() {

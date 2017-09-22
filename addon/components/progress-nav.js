@@ -14,12 +14,11 @@ export default Component.extend({
     let out = [];
     let step = get(this, 'step');
     let stepTotal = get(this, 'stepTotal');
-    for (var i = 1; i < stepTotal + 1; i++) {
-      if ( i === step) {
+    for (let i = 1; i < stepTotal + 1; i++) {
+      if (i === step) {
         out[i - 1] = { v: i, s: true };
-      }
-      else {
-        out[i - 1] = { v: i }
+      }      else {
+        out[i - 1] = { v: i };
       }
     }
     return out;

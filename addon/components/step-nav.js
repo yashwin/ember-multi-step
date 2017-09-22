@@ -7,11 +7,15 @@ const {
   computed
 } = Ember;
 
-const { empty, alias } = computed;
+const { alias } = computed;
 
 export default Component.extend({
   classNames: ['ems-nav'],
   layout,
+  // is true if should display next button
+  showNext: alias('notEnd'),
+  // is true if should display back button
+  showPrev: alias('notBeginning'),
   // is true if not on the first page
   notBeginning: computed('step', function() {
     return get(this, 'step') !== 1;
@@ -20,10 +24,6 @@ export default Component.extend({
   notEnd: computed('step', 'stepTotal', function() {
     return get(this, 'step') !== get(this, 'stepTotal');
   }),
-  // is true if should display next button
-  showNext:alias('notEnd'),
-  // is true if should display back button
-  showPrev: alias('notBeginning'),
   actions: {
     nextStep() {
       get(this, 'changeStep')(get(this, 'step') + 1); // DDAU
