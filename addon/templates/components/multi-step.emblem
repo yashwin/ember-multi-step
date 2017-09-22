@@ -1,5 +1,5 @@
 .mse
-  = progress-nav step=step stepTotal=stepTotal changeStep=(action 'changeStep' step)
+  = progress-nav step=step stepTotal=stepTotal changeStep=(action 'changeStep')
   .ems-sctn
     = yield
-  = step-nav step=step stepTotal=stepTotal changeStep=(action 'changeStep' step)
+  = step-nav step=step stepTotal=stepTotal changeStep=(action 'changeStep')
