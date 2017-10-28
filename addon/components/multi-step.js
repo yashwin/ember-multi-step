@@ -1,12 +1,7 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import { set, get } from '@ember/object';
+import $ from 'jquery';
 import layout from '../templates/components/multi-step';
-
-const {
-  Component,
-  get,
-  set,
-  $
-} = Ember;
 
 export default Component.extend({
   classNames: ['ems'],

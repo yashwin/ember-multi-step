@@ -1,12 +1,6 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import { computed, getWithDefault, get } from '@ember/object';
 import layout from '../templates/components/single-step';
-
-const {
-  Component,
-  get,
-  getWithDefault,
-  computed
-} = Ember;
 
 export default Component.extend({
   classNames: ['ems-step'],

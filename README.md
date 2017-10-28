@@ -35,7 +35,6 @@ step - property defined on component/controller that allows observing the step p
 * `git clone <repository-url>` this repository
 * `cd ember-multi-step`
 * `npm install`
-* `bower install`
 
 ## Running
 

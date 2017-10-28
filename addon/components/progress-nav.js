@@ -1,11 +1,6 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import { computed, get } from '@ember/object';
 import layout from '../templates/components/progress-nav';
-
-const {
-  Component,
-  get,
-  computed
-} = Ember;
 
 export default Component.extend({
   classNames: ['ems-progress'],

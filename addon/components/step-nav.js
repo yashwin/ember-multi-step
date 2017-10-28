@@ -1,11 +1,6 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import { computed, get } from '@ember/object';
 import layout from '../templates/components/step-nav';
-
-const {
-  Component,
-  get,
-  computed
-} = Ember;
 
 const { alias } = computed;
 
