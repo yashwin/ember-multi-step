@@ -13,9 +13,10 @@ export default function(name, options = {}) {
       }
     },
 
-    afterEach() {
+    async afterEach() {
       let afterEach = options.afterEach && options.afterEach.apply(this, arguments);
-      return resolve(afterEach).then(() => destroyApp(this.application));
+      await resolve(afterEach);
+      return destroyApp(this.application);
     }
   });
 }

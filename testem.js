@@ -1,16 +1,5 @@
 /* eslint-env node */
 module.exports = {
-<<<<<<< HEAD
-  'test_page': 'tests/index.html?hidepassed',
-  'disable_watching': true,
-  'launch_in_ci': [
-    'PhantomJS'
-  ],
-  'launch_in_dev': [
-    'PhantomJS',
-    'Chrome'
-  ]
-=======
   test_page: 'tests/index.html?hidepassed',
   disable_watching: true,
   launch_in_ci: [
@@ -30,5 +19,4 @@ module.exports = {
       ]
     },
   }
->>>>>>> 592d580... diff
 };

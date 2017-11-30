@@ -43,15 +43,9 @@ module.exports = function(environment) {
     ENV.APP.rootElement = '#ember-testing';
   }
 
-<<<<<<< HEAD
   // if (environment === 'production') {
 
   // }
-=======
-  if (environment === 'production') {
-    // here you can enable a production-specific feature
-  }
->>>>>>> 592d580... diff
 
   return ENV;
 };
